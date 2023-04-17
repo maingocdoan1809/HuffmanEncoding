@@ -54,7 +54,6 @@ private:
       Node* leastNode = myqueue.top();
       myqueue.pop();
       Node* secondleastNode = myqueue.top();
-      cout << "Sum: " << leastNode->_char << " and " << secondleastNode->_char << endl;
       myqueue.pop();
       int sum = leastNode->_count + secondleastNode->_count;
       Node* sumNode = new Node('#', sum, leastNode, secondleastNode);
